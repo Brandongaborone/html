@@ -6,12 +6,13 @@
   <title>BRANDON - Personal Website</title>
   <link rel="stylesheet" href="style.css">
     
-  
+  <script src="./script.js"></script>
 
 </head>
 
 
 <body>
+  
   <header class="header1">
     <div>
         <h1><img src="./assets/download (6).jpg" alt=""></h1>
@@ -33,16 +34,8 @@
         <iframe width="1900" height="315" src="https://www.youtube.com/embed/mOFoh9FUR8w?si=_PT9aYOIzaZmcp3Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         
       <div class="AA">
-        <h1 id="name">ABOUT BRANDON</h1>
-      <p >Hey there, I'm Brandon, your go-to guy for all things tech, sports, and coding. Whether I'm diving into the latest gadgets, scoring goals on the field, or crafting lines of code, I'm always in my element.
-
-        Tech? Oh, you bet I'm on top of it. From coding to troubleshooting, I've got it covered. And speaking of coding, it's more than just a skill for me—it's a passion. There's something about the logic and creativity behind it that really gets me fired up.
-        
-        And when it comes to sports, well, let's just say I bring my A-game every time. Whether it's basketball, soccer, or even a game of ultimate frisbee, I'm always up for the challenge.
-        
-        But it's not just about me; I thrive in team environments. As a natural leader, I love rallying the troops and bringing out the best in everyone. And when the pressure's on, that's when I really shine. I thrive in high-stakes situations, turning challenges into opportunities for success.
-        
-        So, whether it's dominating the digital world, crushing it on the field, or leading the charge under pressure, you can count on me to get the job done. I'm Brandon, and I'm here to make things happen.
+        <h1 id="name">      </h1>
+      <p     id ="about-paragraph">
         </p>
       <img src="./assets/images.jpg" alt="Your Image">
       </div>
@@ -59,7 +52,7 @@
 <section class="contact">
      
    <div>  
-      <table>
+      <table id="text">
         <tr>
           <th>WORK EXPERIENCE</th>
           <th>PROJECTS DONE</th>
@@ -98,6 +91,28 @@
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.274257380938!2d-70.56068388481569!3d41.45496659976631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e52963ac45bbcb%3A0xf05e8d125e82af10!2sDos%20Mas!5e0!3m2!1sen!2sus!4v1671220374408!5m2!1sen!2sus" width="500" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     
   </footer>
-<script src="./script.js"></script>
+  <script src="./script.js"></script>
+
+
+
+  <script>
+   document.addEventListener('DOMContentLoaded', function() {
+  const headingName = 'Brandon';
+  const about = `I'm Brandon, a passionate and driven individual with a strong background in various fields. My enthusiasm for learning and exploring new opportunities fuels my creativity and network-building skills.
+
+  With over 6 years of experience, I've guided individuals in their career paths, helping them navigate the ever-changing professional landscape. My expertise lies in information gathering and providing insightful guidance to empower individuals to make informed career decisions.
+
+  But my drive extends beyond just career guidance. I'm constantly seeking new challenges and ways to make a positive impact. Whether it's delving into the world of technology, exploring the intricacies of human behavior, or simply connecting with others, I'm always up for the adventure.
+
+  So, if you're looking for a collaborator, a mentor, or just someone with a curious mind and a positive outlook, let's connect!`;
+
+  const nameElement = document.getElementById('name');
+  const aboutParagraph = document.getElementById('about-paragraph');
+
+  nameElement.innerHTML = headingName;
+  aboutParagraph.innerHTML = about;
+})
+</script
+
 </body>
 </html>
